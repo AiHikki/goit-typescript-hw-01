@@ -1,6 +1,9 @@
-"use strict";
-const add = (a, b) => {
-    return a + b;
-};
-console.log(add(2, 4));
+import { concatenation } from "./concatenation";
+const button = document.querySelector("button");
+const input = document.querySelector("input");
+if (button && input) {
+    button.addEventListener("click", () => {
+        concatenation(input.value, "hello!");
+    });
+}
 //# sourceMappingURL=index.js.map
